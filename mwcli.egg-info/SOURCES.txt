@@ -1,0 +1,13 @@
+README.md
+setup.py
+mwcli/__init__.py
+mwcli/api.py
+mwcli/cli.py
+mwcli/config.py
+mwcli/formatter.py
+mwcli.egg-info/PKG-INFO
+mwcli.egg-info/SOURCES.txt
+mwcli.egg-info/dependency_links.txt
+mwcli.egg-info/entry_points.txt
+mwcli.egg-info/requires.txt
+mwcli.egg-info/top_level.txt

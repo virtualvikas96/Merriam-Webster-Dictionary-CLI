@@ -1,0 +1,3 @@
+[console_scripts]
+mwcli = mwcli.cli:main
+
