@@ -1,44 +1,106 @@
-This is a small Python program you can run in your terminal to find word meanings using the Merriam-Webster Dictionary API.
+# 📘 MWCLI - Merriam-Webster Dictionary CLI
 
-What is the function of this tool 
+A simple and intuitive command-line tool to fetch word definitions using the Merriam-Webster Collegiate Dictionary API.
 
- You type a word into the terminal.
- It shows you the meaning using data from Merriam-Webster's dictionary.
+---
 
-prerequisites:
- system with Python 3 installed.
- An internet connection.
- A f API key from Merriam-Webster.  https://dictionaryapi.com/register/
+## 🚀 Features
 
-getting started :
+- 🔍 Get concise definitions for English words
+- 🔊 Displays pronunciation and part of speech
+- ⚙️ CLI interface powered by Python
+- 🐳 Dockerized for easy usage anywhere
 
- 1: get the code from this Repo : 
+---
 
- git clone https://github.com/sparsh25071997/mwcli.git
- cd mwcli
+## 🛠️ Installation
 
- 2:Create a Python environment:
- python3 -m venv venv
- source venv/bin/activate
+### 🔧 Option 1: Run with Python
 
- 3: pip install -r requirements.txt
+```bash
+# Clone the repository
+git clone https://github.com/virtualvikas96/Merriam-Webster-Dictionary-CLI.git
+cd Merriam-Webster-Dictionary-CLI
+```
 
- 4 :
- Add your API key:
- Create a file named .env in the same folder, and add this line (replace with your real key):
+# (Optional) Create and activate virtual environment
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
 
- MW_API_KEY=your_api_key_here
+# Install the CLI
+```bash
+pip install .
+```
 
+# Set your API key
+```bash
+echo "MW_API_KEY=your_api_key_here" > .env
+```
 
- 5: Testing 
- mwcli "any word to test "
+# Use the CLI
+```bash
+mwcli innovation
+```
 
- 6: 
- -cli.py: This is the main file you run.
- -dictionary/api.py: The file that talks to Merriam-Webster.
- -tests/: Folder with test files.
- -requirements.txt: List of Python packages the tool needs.
- -Makefile: Helps automate testing and building.
+##🐳 Option 2: Run with Docker
+# Build the Docker image
+```bash
+docker build -t mwcli .
 
+# Run a word lookup
+docker run --rm -e MW_API_KEY=your_api_key_here mwcli innovation
 
+# Or enter the container interactively
+docker run -it --rm --entrypoint /bin/sh mwcli
+```
 
+##📦 Project Structure
+```bash
+mwcli/
+├── mwcli/                  # CLI app: api.py, cli.py, config.py, etc.
+├── tests/                 # Unit tests
+├── requirements.txt       # Python dependencies
+├── setup.py               # Packaging config
+├── Dockerfile             # Docker build file
+├── Makefile               # Build/test commands
+└── .env                   # Environment variables (not committed)
+```
+
+###📄 Example
+```bash
+$ mwcli innovation
+```
+
+###📖 innovation  
+📌 Pronunciation: ˌi-nə-ˈvā-shən  
+🧠 Part of Speech: noun  
+💬 Definition: the introduction of something new
+
+###🔐 Environment Variables
+Variable	Description
+```bash
+MW_API_KEY	Your Merriam-Webster API key
+```
+
+Set this via a .env file or -e flag in Docker.
+
+###✅ Make Targets
+```bash
+make build     # Build distribution package
+make test      # Run tests
+make clean     # Clean up artifacts
+```
+
+###🤝 Contributing
+Contributions, issues, and feature requests are welcome!
+1. Fork the repo
+2. Create your feature branch (git checkout -b feature/foo)
+3. Commit your changes (git commit -am 'Add new feature')
+4. Push to the branch (git push origin feature/foo)
+5. Create a new Pull Request
+
+##🙏 Credits
+Developed by @virtualvikas96
+Powered by Merriam-Webster Developer API
