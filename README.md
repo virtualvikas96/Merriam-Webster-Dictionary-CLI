@@ -45,7 +45,9 @@ mwcli innovation
 ```
 
 ##🐳 Option 2: Run with Docker
+
 # Build the Docker image
+
 ```bash
 docker build -t mwcli .
 
@@ -56,7 +58,8 @@ docker run --rm -e MW_API_KEY=your_api_key_here mwcli innovation
 docker run -it --rm --entrypoint /bin/sh mwcli
 ```
 
-##📦 Project Structure
+## 📦 Project Structure
+
 ```bash
 mwcli/
 ├── mwcli/                  # CLI app: api.py, cli.py, config.py, etc.
@@ -68,17 +71,20 @@ mwcli/
 └── .env                   # Environment variables (not committed)
 ```
 
-##📄 Example
+## 📄 Example
+
 ```bash
 $ mwcli innovation
 ```
 
-##📖 innovation  
+## 📖 innovation  
+
 📌 Pronunciation: ˌi-nə-ˈvā-shən  
 🧠 Part of Speech: noun  
 💬 Definition: the introduction of something new
 
-##🔐 Environment Variables
+## 🔐 Environment Variables
+
 Variable	Description
 ```bash
 MW_API_KEY	Your Merriam-Webster API key
@@ -86,14 +92,16 @@ MW_API_KEY	Your Merriam-Webster API key
 
 Set this via a .env file or -e flag in Docker.
 
-##✅ Make Targets
+## ✅ Make Targets
+
 ```bash
 make build     # Build distribution package
 make test      # Run tests
 make clean     # Clean up artifacts
 ```
 
-##🤝 Contributing
+## 🤝 Contributing
+
 Contributions, issues, and feature requests are welcome!
 1. Fork the repo
 2. Create your feature branch (git checkout -b feature/foo)
@@ -101,6 +109,3 @@ Contributions, issues, and feature requests are welcome!
 4. Push to the branch (git push origin feature/foo)
 5. Create a new Pull Request
 
-##🙏 Credits
-Developed by @virtualvikas96
-Powered by Merriam-Webster Developer API
