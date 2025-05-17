@@ -76,9 +76,7 @@ mwcli/
 ```bash
 $ mwcli innovation
 ```
-
-## 📖 innovation  
-
+📖 innovation  
 📌 Pronunciation: ˌi-nə-ˈvā-shən  
 🧠 Part of Speech: noun  
 💬 Definition: the introduction of something new
