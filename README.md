@@ -15,7 +15,7 @@ A simple and intuitive command-line tool to fetch word definitions using the Mer
 
 ## 🛠️ Installation
 
-### 🔧 Option 1: Run with Python
+## 🔧 Option 1: Run with Python
 
 ```bash
 # Clone the repository
@@ -68,17 +68,17 @@ mwcli/
 └── .env                   # Environment variables (not committed)
 ```
 
-###📄 Example
+##📄 Example
 ```bash
 $ mwcli innovation
 ```
 
-###📖 innovation  
+##📖 innovation  
 📌 Pronunciation: ˌi-nə-ˈvā-shən  
 🧠 Part of Speech: noun  
 💬 Definition: the introduction of something new
 
-###🔐 Environment Variables
+##🔐 Environment Variables
 Variable	Description
 ```bash
 MW_API_KEY	Your Merriam-Webster API key
@@ -86,14 +86,14 @@ MW_API_KEY	Your Merriam-Webster API key
 
 Set this via a .env file or -e flag in Docker.
 
-###✅ Make Targets
+##✅ Make Targets
 ```bash
 make build     # Build distribution package
 make test      # Run tests
 make clean     # Clean up artifacts
 ```
 
-###🤝 Contributing
+##🤝 Contributing
 Contributions, issues, and feature requests are welcome!
 1. Fork the repo
 2. Create your feature branch (git checkout -b feature/foo)
